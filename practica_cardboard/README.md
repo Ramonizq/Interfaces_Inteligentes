@@ -14,20 +14,22 @@ Escena de realidad virtual para móvil con Google Cardboard en la que el jugador
 practica_cardboard/
 ├── README.md
 ├── apk/practica_cardboard.apk          APK para Android
-└── codigo/
-    ├── Scripts/                        Lógica de la escena
-    │   ├── GestorRecoleccion.cs
-    │   ├── Recolectable.cs
-    │   ├── ObjetoRecuperador.cs
-    │   └── MovimientoJugador.cs
-    ├── Editor/ConstructorCardboard.cs  Configura el proyecto, crea la escena y genera el APK
-    ├── SDK_modificado/CardboardStartup.cs   Script del SDK con la corrección del enunciado
-    └── Android/                        Plantillas Gradle que exige el SDK
+├── codigo/
+│   ├── Scripts/                        Lógica de la escena
+│   │   ├── GestorRecoleccion.cs
+│   │   ├── Recolectable.cs
+│   │   ├── ObjetoRecuperador.cs
+│   │   └── MovimientoJugador.cs
+│   ├── Editor/ConstructorCardboard.cs  Configura el proyecto, crea la escena y genera el APK
+│   ├── SDK_modificado/CardboardStartup.cs   Script del SDK con la corrección del enunciado
+│   └── Android/                        Plantillas Gradle que exige el SDK
+└── IOS/                                Opción para probar en iPhone: script e instrucciones
 ```
 
 * **Para instalar la aplicación:** carpeta `apk/`, que contiene únicamente el APK.
 * **Para revisar la lógica del juego:** carpeta `codigo/Scripts/`.
 * **Para ver cómo se crea la escena y se configura Android:** `codigo/Editor/ConstructorCardboard.cs`.
+* **Para probarla en un iPhone:** [`IOS/README.md`](IOS/README.md). Es una opción adicional, que requiere compilarla con Xcode; la versión principal es el APK.
 
 Los paquetes de la Asset Store no se incluyen en el repositorio: hay que importarlos para abrir la escena (apartado 5).
 
@@ -129,7 +131,7 @@ Los materiales de estos paquetes se convierten a URP Lit por código desde `Cons
 
 **Sin comprobar:**
 
-* El APK no se ha ejecutado en un móvil ni con un visor real. Por tanto, tampoco se han probado el seguimiento de la cabeza, el rendimiento en dispositivo ni la lectura del código QR.
+* El APK no se ha ejecutado en un móvil Android. La escena y el juego sí se han probado en un iPhone, con la compilación aparte de la carpeta `IOS/`, pero esa prueba no valida el APK.
 * No se ha usado un mando físico, solo uno virtual.
 
 **Avisos conocidos:**
