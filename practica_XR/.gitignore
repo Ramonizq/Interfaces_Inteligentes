@@ -1,0 +1,23 @@
+# Generado por Unity: se reconstruye al abrir el proyecto
+/Library/
+/Temp/
+/Logs/
+/obj/
+/Build/
+/Builds/
+/UserSettings/
+/MemoryCaptures/
+
+# Generado por los IDE
+/.vscode/
+/.idea/
+/.vs/
+*.csproj
+*.sln
+*.slnx
+
+# Paquete de la Asset Store: su licencia no permite redistribuirlo, hay que importarlo (ver README)
+/Assets/SimpleNaturePack/
+/Assets/SimpleNaturePack.meta
+
+.DS_Store
